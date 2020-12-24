@@ -5,29 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
 
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!--facebook & その他SNSの設定-->
+    <meta property="og:title" content="ポートフォリオ">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="大森裕介のポートフォリオサイトです。今まで制作してきた様々なものを載せているので、ぜひご覧ください。">
+    <meta property="og:url" content="https://yusuke-ohmori.firebaseapp.com/">
+    <meta property="og:image" content="https://github.com/OHMORIYUSUKE/Portfolio/blob/main/images/face.png?raw=true">
+    <!-- <meta property="og:site_name" content="ポートフォリオ"> -->
+
+    <!--twitterの設定-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="https://yusuke-ohmori.firebaseapp.com/">
+    <meta name="twitter:image" content="https://github.com/OHMORIYUSUKE/Portfolio/blob/main/images/face.png?raw=true" />
+    <meta name="twitter:title" content="ポートフォリオ">
+    <meta name="twitter:description" content="大森裕介のポートフォリオサイトです。今まで制作してきた様々なものを載せているので、ぜひご覧ください。">
+
+
     <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
     <link href="css/style-profile.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width">
 </head>
 <body>
-    <header class="site-header">
-        <h1 class="header-title">Portfolio</h1>
-        <nav class="gnav">
-            <ul class="gnav__menu">
-                <li class="gnav__menu__item"><a href="index.html">Main</a></li>
-                <li class="gnav__menu__item"><a href="profile.html">About</a></li>
-                <li class="gnav__menu__item"><a href="works.html">Works</a></li>
-                <li class="gnav__menu__item"><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header>
+        <div class="container">
+          <h1 class="head-title">Portfolio</h1>
+          <nav id="Header-Nav" class="header-nav">
+            <a href="index.html" class="nav-list">Top</a>
+            <a href="profile.html" class="nav-list">About</a>
+            <a href="works.html" class="nav-list">Works</a>
+            <a href="contact.html" class="nav-list">Contact</a>
+            <a href="blog.php" class="nav-list">Blog</a>
+          </nav>
+          <div id="Hamburger" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+            <p>MENU</p>
+          </div>
+        </div>
+      </header>
+      <script type="text/javascript" src="js/prof.js"></script>
 
     <h1 class="title">About</h1>
-    <h2 class="name">大森 裕介　<span id="name">Yusuke Ohmori</span></h2>
+    <h2 class="name">大森 裕介<p id="name">Yusuke Ohmori</p></h2>
     
     <div class="main-face">
-        <img  width="600px" height="337px" src="../public/images/face.png" alt="画像">
+        <img  class="img-M" src="images/face.png" alt="画像">
     </div>
 
     <h3 class="sub-title">Basic Information</h3>
@@ -39,36 +67,39 @@
             <br>
             <p><span class="sub2-title">大学</span>　公立千歳科学技術大学</p>
             <p><span class="sub2-title">学科</span>　情報システム工学科</p>
-            <p><span class="sub2-title">サークル</span>　<a href="https://cist-lt-group.web.app/">cist-LTサークル</a></p>
+            <p><span class="sub2-title">サークル</span>　<span class="link"><a href="https://cist-lt-group.web.app/">cist-LTサークル</a></span></p>
         </div>
 
     
     <h3 class="sub-title">Profile</h3>
     <div class="text">
         <p><span class="sub2-title">学習</span>　大学ではプログラムなどについて学んでおり、CやJavaなどを学んでいます。
-                                             <br>個人的に学んでいることは、HTMLやCSSについて学んでいます。
+                                             <br>個人的に学んでいることは、PHP,Python,JavaScriptについて学んでいます。
                                              <br>他にもUnityを使い始めたためC#も学びたいと思っています。</p>
         <br>
         <p><span class="sub2-title">趣味</span>　BlenderやUnityを使って様々なものを作ることが最近の趣味です。
                                              <br>以前からの趣味はアニメを見ることです。
                                              <br>以下に特に好きなアニメのリンクを貼っておきます。
-                                             <br><a href="http://hi-score-girl.com/">ハイスコアガール</a>
-                                             <br><a href="https://www.gurren-lagann.net/tv/">天元突破グレンラガン</a></p>
+                                             <br><p class="link"><a href="http://hi-score-girl.com/">ハイスコアガール</a></p>
+                                             <p class="link"><a href="https://www.gurren-lagann.net/tv/">天元突破グレンラガン</a></p></p>
     </div>
 
     <h3 class="sub-title">Skill</h3>
     <div class="text">
-        <p><span class="sub2-title">C言語</span>　★☆☆☆☆</p>
-        <p><span class="sub2-title">Java</span>　☆☆☆☆☆</p>
-        <p><span class="sub2-title">HTML</span>　★☆☆☆☆</p>
-        <p><span class="sub2-title">CSS</span>　★☆☆☆☆</p>
+        <p><span class="sub2-title">C言語</span>　★★★☆☆</p>
+        <p><span class="sub2-title">Java</span>　★☆☆☆☆</p>
+        <p><span class="sub2-title">javascript</span>　★★☆☆☆</p>
+        <p><span class="sub2-title">PHP</span>　★☆☆☆☆</p>
+        <p><span class="sub2-title">Python</span>　★☆☆☆☆</p>
+        <br>
+        <p><span class="sub2-title">HTML</span>　★★★☆☆</p>
+        <p><span class="sub2-title">CSS</span>　★★☆☆☆</p>
         <br>
         <p><span class="sub2-title">Blender</span>　★★☆☆☆</p>
-        <p><span class="sub2-title">Unity</span>　☆☆☆☆☆</p>
+        <p><span class="sub2-title">Unity</span>　★☆☆☆☆</p>
     </div>
 
-
-
+    <footer>Copyright © 2020-2020 Ohmori Yusuke Portfolio  All Rights Reserved.</footer>
 
 </body>
 </html>

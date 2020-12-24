@@ -5,60 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
 
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!--facebook & その他SNSの設定-->
+    <meta property="og:title" content="ポートフォリオ">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="大森裕介のポートフォリオサイトです。今まで制作してきた様々なものを載せているので、ぜひご覧ください。">
+    <meta property="og:url" content="https://yusuke-ohmori.firebaseapp.com/">
+    <meta property="og:image" content="https://github.com/OHMORIYUSUKE/Portfolio/blob/main/images/face.png?raw=true">
+    <!-- <meta property="og:site_name" content="ポートフォリオ"> -->
+
+    <!--twitterの設定-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="https://yusuke-ohmori.firebaseapp.com/">
+    <meta name="twitter:image" content="https://github.com/OHMORIYUSUKE/Portfolio/blob/main/images/face.png?raw=true" />
+    <meta name="twitter:title" content="ポートフォリオ">
+    <meta name="twitter:description" content="大森裕介のポートフォリオサイトです。今まで制作してきた様々なものを載せているので、ぜひご覧ください。">
+
     <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
     <link href="css/style-contact.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width">
 </head>
 <body>
 
-    <header class="site-header">
-        <h1 class="header-title">Portfolio</h1>
-        <nav class="gnav">
-            <ul class="gnav__menu">
-                <li class="gnav__menu__item"><a href="index.html">Main</a></li>
-                <li class="gnav__menu__item"><a href="profile.html">About</a></li>
-                <li class="gnav__menu__item"><a href="works.html">Works</a></li>
-                <li class="gnav__menu__item"><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-
+    <header>
+        <div class="container">
+          <h1 class="head-title">Portfolio</h1>
+          <nav id="Header-Nav" class="header-nav">
+            <a href="index.html" class="nav-list">Top</a>
+            <a href="profile.html" class="nav-list">About</a>
+            <a href="works.html" class="nav-list">Works</a>
+            <a href="contact.html" class="nav-list">Contact</a>
+            <a href="blog.php" class="nav-list">Blog</a>
+          </nav>
+          <div id="Hamburger" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+            <p>MENU</p>
+          </div>
+        </div>
+      </header>
+      
     
     <h1 class="title">Contact</h1>
     
     <h3 class="description">ポートフォリオサイトを見ていただきありがとうございます。
-        <br>何かありましたら、以下方法でコメントを頂けると幸いです。
+        <br>何かありましたら、以下のいずれかの方法でコメントを頂けると幸いです。
     </h3>
+<div class="form">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdvWx83yeEV-06G6GcdqZvwmH50ZLSfvXlMWDDLfvLEcSvY6w/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+</div>
 
-    <ul class="icon">
+    <h3 class="sub-title">SNS</h3>
+
+    <ul class="float">
 <li>
-    <p class="image-icon">
+    <div class="image-icon">
         <a href="mailto:b2190350@photon.chitose.ac.jp"><img src="images/mail-icon.png" alt=""></a>
-        <p id="popup">e-mail</p>
-    </p>
+        <p id="popup">Email</p>
+    </div>
 </li>
 <li>
-    <p class="image-icon">
+    <div class="image-icon">
         <a href="https://twitter.com/u____tan_"><img src="images/twitter-icon.png" alt="画像"></a>
         <p id="popup">twitter</p>
-    </p>
+    </div>
 </li>
 <li>
-    <p class="image-icon">
+    <div class="image-icon">
         <a href="https://github.com/OHMORIYUSUKE"><img src="images/github-icon.png" alt="画像"></a>
         <p id="popup">github</p>
-    </p>
+    </div>
 </li>
 <li>
-    <p class="image-icon">
+    <div class="image-icon">
         <a href="https://www.youtube.com/channel/UCh3UxltPRUMykwhDBK_OC0g?view_as=subscriber"><img src="images/yt_icon_rgb.png" alt="画像"></a>
         <p id="popup">youtube</p>
-    </p>
+    </div>
+</li>
+<li>
+    <div class="image-icon">
+        <a href="https://www.youtube.com/channel/UCh3UxltPRUMykwhDBK_OC0g?view_as=subscriber"><img src="images/hatenablog-logo.svg" alt="画像"></a>
+        <p id="popup">Hatena Blog</p>
+    </div>
 </li>
 </ul>
 
+<h3 class="sub-title">Share</h3>
+<p id="share">最後までご覧いただきありがとうございます。<br>よろしければ共有してください！<br>↓↓↓</p>
 
+<ul class="float">
+<li>
+    <div class="line-it-button" data-lang="ja" data-type="share-a" data-ver="3" data-url="https://yusuke-ohmori.firebaseapp.com/" data-color="default" data-size="large" data-count="false" style="display: none;"></div>
+    <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+</li>
+<li>
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="大森裕介のポートフォリオです。ぜひご覧ください！" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</li>
+<li>
+    <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fyusuke-ohmori.firebaseapp.com%2F&layout=button&size=large&width=79&height=28&appId" width="79" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe> 
+</li>
+<li>
+    <a href="https://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label" data-hatena-bookmark-lang="ja" data-hatena-bookmark-width="95" data-hatena-bookmark-height="30" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>    
+</li>
+</ul>
+
+<footer>Copyright © 2020-2020 Ohmori Yusuke Portfolio  All Rights Reserved.</footer>
+<script type="text/javascript" src="js/prof.js"></script>
 </body>
 </html>
